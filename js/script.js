@@ -106,7 +106,7 @@ const listaBebidas = document.getElementById("listaBebidas");
 
 bebidas.forEach((bebidas) => {
   const card = document.createElement("div");
-  card.className = "card text-center mt-3 rounded-pill";
+  card.className = "card text-center mt-3 rounded-pill  text-bg-danger p-3 ";
   card.setAttribute("data-toggle", "tooltip");
   card.setAttribute("data-placement", "bottom");
   card.setAttribute("title", bebidas.ingredientes);

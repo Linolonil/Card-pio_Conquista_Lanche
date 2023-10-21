@@ -9,11 +9,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
-  background-image: url("./assets/background/fundo-de-textura-de-couro-preto-original.jpg");
+  background-image: url("./assets/background/Background3.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-clip: border-box;
 }
 
@@ -27,21 +29,8 @@ body {
 
 .card {
   background: transparent;
-  max-width: 95%; /* Reduz o tamanho do card para 80% da largura máxima */
-  margin-left: 20px;
-}
-
-.stripe1 {
-  position: absolute;
-  border-left: 1px solid #fa3535; /* Cor e espessura da linha */
-  height: 100%; /* Altura da linha */
-  margin-left: 5px;
-}
-.stripe2 {
-  position: absolute;
-  border-left: 1px solid #fa3535; /* Cor e espessura da linha */
-  height: 100%; /* Altura da linha */
-  margin-left: 10px;
+  max-width: 95%;
+  margin: 0 auto;
 }
 /* Fontes */
 .slogan,
