@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@font-face {
+  font-family: "Poetsen";
+  src: url("./assets/fonts/PoetsenOne-Regular.ttf") format("truetype"); /* Substitua o caminho pelo local onde o arquivo de fonte está armazenado. */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./assets/background/fundo-de-textura-de-couro-preto-original.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative; /* Importante para usar o pseudo-elemento */
+}
+
+.card-img-top {
+  max-width: 50%;
+  /* Defina o tamanho desejado */
+  margin: 0 auto;
+  margin-bottom: -10px;
+  /* Centraliza horizontalmente */
+}
+
+body::before {
+  content: ""; /* O pseudo-elemento precisa de algum conteúdo, mesmo que vazio */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9); /* Cor de fundo com opacidade (50%) */
+  z-index: -1; /* Colocando o pseudo-elemento atrás do conteúdo do body */
+}
+
+.card {
+  background: transparent;
+  max-width: 95%; /* Reduz o tamanho do card para 80% da largura máxima */
+  margin-left: 20px;
+}
+
+.stripe1 {
+  position: absolute;
+  border-left: 1px solid #fa3535; /* Cor e espessura da linha */
+  height: 100%; /* Altura da linha */
+  margin-left: 5px;
+}
+.stripe2 {
+  position: absolute;
+  border-left: 1px solid #fa3535; /* Cor e espessura da linha */
+  height: 100%; /* Altura da linha */
+  margin-left: 10px;
+}
+/* Fontes */
+.slogan,
+.title_foods {
+  font-family: "Poetsen", sans-serif;
+}
+
+.foods_fonts {
+  font-family: "Anton", sans-serif;
+  color: #ffbd59;
+}
