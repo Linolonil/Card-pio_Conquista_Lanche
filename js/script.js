@@ -49,7 +49,7 @@ const listaLanches = document.getElementById("listaLanches");
 
 lanches.forEach((lanche) => {
   const card = document.createElement("div");
-  card.className = "card text-center mt-3 rounded-pill";
+  card.className = "card text-center mt-2 rounded-pill  text-light ";
   card.setAttribute("data-toggle", "tooltip");
   card.setAttribute("data-placement", "bottom");
   card.setAttribute("title", lanche.ingredientes);
@@ -61,7 +61,7 @@ lanches.forEach((lanche) => {
                 <h5 class="card-title foods_fonts">${lanche.nome}</h5>
             </div>
             <div class="col-6">
-                <p class="text-center foods_fonts">R$${lanche.preco}</p>
+                <h5 class="text-center foods_fonts">R$${lanche.preco}</h5>
             </div>
         </div>
     </div>
@@ -106,7 +106,7 @@ const listaBebidas = document.getElementById("listaBebidas");
 
 bebidas.forEach((bebidas) => {
   const card = document.createElement("div");
-  card.className = "card text-center mt-3 rounded-pill  text-bg-danger p-3 ";
+  card.className = "card text-center mt-2 rounded-pill  text-light";
   card.setAttribute("data-toggle", "tooltip");
   card.setAttribute("data-placement", "bottom");
   card.setAttribute("title", bebidas.ingredientes);
@@ -118,7 +118,7 @@ bebidas.forEach((bebidas) => {
                     <h5 class="card-title foods_fonts">${bebidas.nome}</h5>
                 </div>
                 <div class="col-6">
-                    <p class="text-center foods_fonts">R$${bebidas.preco}</p>
+                    <h5 class="text-center foods_fonts">R$${bebidas.preco}</h5>
                 </div>
             </div>
         </div>

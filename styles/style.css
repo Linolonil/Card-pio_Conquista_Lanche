@@ -5,6 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-clip: border-box;
+  transition: all 2s ease-in-out;
 }
 
 .card-img-top {
@@ -42,4 +46,9 @@ body {
 .foods_fonts {
   font-family: "Anton", sans-serif;
   color: #ffbd59;
+}
+/* Adicione transições para a classe .ingredientes */
+.ingredientes {
+  padding: 10px;
+  transition: all 30s ease-in-out; /* Tempo de transição e função de temporização suave */
 }
