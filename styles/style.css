@@ -15,7 +15,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: border-box;
-  position: relative; /* Importante para usar o pseudo-elemento */
 }
 
 .card-img-top {
@@ -24,17 +23,6 @@ body {
   margin: 0 auto;
   margin-bottom: -10px;
   /* Centraliza horizontalmente */
-}
-
-body::before {
-  content: ""; /* O pseudo-elemento precisa de algum conteúdo, mesmo que vazio */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9); /* Cor de fundo com opacidade (50%) */
-  z-index: -1; /* Colocando o pseudo-elemento atrás do conteúdo do body */
 }
 
 .card {
