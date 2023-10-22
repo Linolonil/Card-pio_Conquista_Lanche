@@ -20,7 +20,6 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-clip: border-box;
-  transition: all 2s ease-in-out;
 }
 
 .card-img-top {
@@ -32,9 +31,10 @@ body {
 }
 
 .card {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
   max-width: 95%;
   margin: 0 auto;
+  border-color: #ffbd59;
 }
 /* Fontes */
 .slogan,
@@ -46,9 +46,27 @@ body {
 .foods_fonts {
   font-family: "Anton", sans-serif;
   color: #ffbd59;
+  text-align: left;
 }
-/* Adicione transições para a classe .ingredientes */
-.ingredientes {
+
+.card-body {
+  padding: 20px 0 0 0;
+}
+.total {
+  margin: 10px;
+  text-align: right;
+}
+.text_total {
   padding: 10px;
-  transition: all 30s ease-in-out; /* Tempo de transição e função de temporização suave */
+  border: 1px solid #ff000059;
+  border-radius: 15%;
+  background-color: #ff000085;
+}
+
+.quant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 15px;
 }
